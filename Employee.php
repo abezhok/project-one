@@ -1,6 +1,6 @@
 <?php
 
-class employee
+class Employee
 {
 
 }
