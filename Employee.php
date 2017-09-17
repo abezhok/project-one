@@ -1,6 +1,8 @@
 <?php
 
-class Employee
+abstract class Employee implements TypeSalary
 {
+    private $fullname;
+
 
 }
