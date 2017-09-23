@@ -11,5 +11,8 @@ class Controller
     {
         $teamX = new Team('x');
 
+        $designer = new Designer('Kim Chen-Un');
+
+        $teamX->addEmployee($designer);
     }
 }
