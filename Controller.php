@@ -6,4 +6,10 @@ class Controller
     {
         
     }
+
+    public function doTheTask()
+    {
+        $teamX = new Team('x');
+
+    }
 }
