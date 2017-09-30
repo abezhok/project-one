@@ -4,9 +4,12 @@ abstract class Employee implements TypeSalary
 {
     private $fullname;
 
-    public function __construct($fullname)
+    private $salary;
+
+    public function __construct($fullname, $salary)
     {
         $this->setFullname($fullname);
+        $this->setSalary($salary);
     }
 
     /**
@@ -15,6 +18,28 @@ abstract class Employee implements TypeSalary
     public function setFullname($fullname)
     {
         $this->fullname = $fullname;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSalary()
+    {
+        return $this->salary;
+    }
+
+
+
+    public function setSalary($salary)
+    {
+        $this->salary = $salary;
+    }
+
+    public function calculateSalary()
+    {
+        /* @var TypeSalary $salary */
+        $salary = $this->getSalary();
+        return $salary->calculateSalary();
     }
 
 }
