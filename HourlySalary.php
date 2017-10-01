@@ -3,7 +3,6 @@
 class HourlySalary implements TypeSalary
 {
     private $amount;
-
     private $hours;
 
     public function __construct($amount, $hours)
@@ -44,13 +43,13 @@ class HourlySalary implements TypeSalary
         $this->hours = $hours;
     }
 
-
-
     public function calculateSalary()
     {
         $amount = $this->getAmount();
         $hours = $this->getHours();
+
         $salary = $amount * $hours;
+
         return $salary;
     }
 }

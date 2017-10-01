@@ -1,5 +1,7 @@
 <?php
 
+require_once('Employee.php');
+
 class BackendDeveloper extends Employee
 {
     private $qualification;

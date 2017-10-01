@@ -1,5 +1,7 @@
 <?php
 
+require_once('TypeSalary.php');
+
 class Team implements TypeSalary
 {
     private $name;
@@ -44,8 +46,8 @@ class Team implements TypeSalary
         foreach ($employees as $employee) {
             $salary = $employee->calculateSalary();
             $totalSalary += $salary;
-            return $totalSalary;
         }
+
         return $totalSalary;
     }
 }

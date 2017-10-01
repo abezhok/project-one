@@ -3,7 +3,6 @@
 abstract class Employee implements TypeSalary
 {
     private $fullname;
-
     private $salary;
 
     public function __construct($fullname, $salary)
@@ -28,8 +27,6 @@ abstract class Employee implements TypeSalary
         return $this->salary;
     }
 
-
-
     public function setSalary($salary)
     {
         $this->salary = $salary;
@@ -39,7 +36,7 @@ abstract class Employee implements TypeSalary
     {
         /* @var TypeSalary $salary */
         $salary = $this->getSalary();
+
         return $salary->calculateSalary();
     }
-
 }
