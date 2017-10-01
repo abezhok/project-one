@@ -4,7 +4,6 @@ require_once('Team.php');
 require_once('Designer.php');
 require_once('BackendDeveloper.php');
 require_once('FrontendDeveloper.php');
-require_once('TypeSalary.php');
 require_once('FixedSalary.php');
 require_once('HourlySalary.php');
 
